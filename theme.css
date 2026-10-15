@@ -1,24 +1,53 @@
 :root {
   color-scheme: light;
-  --page-background: #f4f6fa;
+  --page-background: #f2f3f5;
   --surface-background: #fff;
-  --primary-text: #17243a;
-  --muted-text: #647087;
-  --surface-border: #e1e6ef;
-  --tag-background: #eff4ff;
-  --tag-text: #485779;
+  --primary-text: #292c31;
+  --muted-text: #686d75;
+  --surface-border: #dfe1e5;
+  --tag-background: #eef0f2;
+  --tag-text: #4d525a;
+  --ink: #292c31;
+  --muted: #686d75;
+  --paper: #f2f3f5;
+  --card: #fff;
+  --navy: #3d424a;
+  --accent: #626973;
+  --green: #626973;
+  --blue: #626973;
+  --theme-accent: #626973;
+  --theme-accent-dark: #c5cad1;
+  --highlight: #d9dce1;
+  --mint: #d9dce1;
+  --orange: #626973;
+  --cyan: #d9dce1;
+  --line: #dfe1e5;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --page-background: #111827;
-  --surface-background: #1f2937;
-  --primary-text: #e5edf7;
-  --muted-text: #aab8ca;
-  --surface-border: #37465a;
-  --tag-background: #2b394c;
-  --tag-text: #d1dceb;
-  --theme-accent-dark: #9cbaff;
+  --page-background: #1b1d21;
+  --surface-background: #272a30;
+  --primary-text: #e6e8eb;
+  --muted-text: #b0b4bb;
+  --surface-border: #41454d;
+  --tag-background: #34383f;
+  --tag-text: #d4d7dc;
+  --ink: #292c31;
+  --muted: #b0b4bb;
+  --paper: #1b1d21;
+  --card: #272a30;
+  --navy: #292c31;
+  --accent: #b9bec6;
+  --green: #b9bec6;
+  --blue: #b9bec6;
+  --theme-accent: #b9bec6;
+  --theme-accent-dark: #c5cad1;
+  --highlight: #d9dce1;
+  --mint: #d9dce1;
+  --orange: #b9bec6;
+  --cyan: #d9dce1;
+  --line: #41454d;
 }
 
 body {
@@ -66,6 +95,31 @@ footer {
 .tag {
   color: var(--tag-text);
   background: var(--tag-background);
+}
+
+.date {
+  color: var(--theme-accent) !important;
+}
+
+.visual::before,
+.visual::after {
+  border-color: #ffffff38 !important;
+}
+
+.initials {
+  border-color: var(--surface-border) !important;
+  color: var(--navy) !important;
+  background: var(--tag-background) !important;
+}
+
+:root[data-theme="dark"] .initials {
+  border-color: #d9dce1 !important;
+  color: #292c31 !important;
+  background: #d9dce1 !important;
+}
+
+.contact p {
+  color: #d4d7dc !important;
 }
 
 .theme-toggle {
@@ -118,4 +172,10 @@ footer {
 
 :root[data-theme="dark"] .card {
   box-shadow: 0 18px 50px #0005;
+}
+
+:root[data-theme="dark"] .button:not(.alt),
+:root[data-theme="dark"] .brand b,
+:root[data-theme="dark"] .mark {
+  color: #292c31 !important;
 }
